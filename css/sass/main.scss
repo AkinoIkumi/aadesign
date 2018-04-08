@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import "variable";
+@import "layout";
+
+$header-height: 56px;
+$default-vertical-pad: 8px;
+$default-horizon-pad: 16px;
+$title-width: 100px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+header {
+    width: 100%;
+    min-width: 980px;
+    height: $header-height;
+    padding: $default-vertical-pad $default-horizon-pad;
+
+    .title {
+        float: left;
+        width: $title-width;
+        line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+    }
+
+    nav {
+        float: left;
+        width: calc(100% - #{$title-width});
+
+        ul {
+            @extend %clearfix;
+            display: block;
+            margin-left: auto;
+            max-width: 780px;
+            padding: 0 $default-horizon-pad;
+
+            li {
+                text-decoration: none;
+                cursor: pointer;
+                padding: 0 8px;
+                float: left;
+                line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+            }
+        }
+    }
+}
+
+.section1 {
+    height: 593px;
+    background-image: url("./..//img/getImage.jpeg");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+
+    .content {
+        position: absolute;
+        left: 15%;
+        top: 35%;
+        width: 50%;
+
+        .title {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            font-size: 20px;
+            line-height: 1.2em;
+        }
+
+        .button {
+            border: solid 1px black;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 20px 0;
+        }
+    }
+}
+
+h2 {
+    margin: 100px auto 50px;
+    font-size: 24px;
+    border-bottom: solid 1px black;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.section2{
+    height: 593px;
+    background-image: url("./../img/img.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+
+    .content {
+        position: absolute;
+        right: 15%;
+        top: 35%;
+        width: 50%;
+        text-align: right;
+
+        .title {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            font-size: 20px;
+            line-height: 1.2em;
+        }
+
+        .button {
+            border: solid 1px black;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 20px 0 0 auto;
+        }
+    }
+}

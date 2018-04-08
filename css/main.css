@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+header nav ul:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lora', serif; }
+
+header {
+  width: 100%;
+  min-width: 980px;
+  height: 56px;
+  padding: 8px 16px; }
+  header .title {
+    float: left;
+    width: 100px;
+    line-height: calc(56px - calc(8px * 2)); }
+  header nav {
+    float: left;
+    width: calc(100% - 100px); }
+    header nav ul {
+      display: block;
+      margin-left: auto;
+      max-width: 780px;
+      padding: 0 16px; }
+      header nav ul li {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 8px;
+        float: left;
+        line-height: calc(56px - calc(8px * 2)); }
+
+.section1 {
+  height: 593px;
+  background-image: url("./..//img/getImage.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative; }
+  .section1 .content {
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    width: 50%; }
+    .section1 .content .title {
+      font-size: 40px;
+      margin-bottom: 30px; }
+    .section1 .content .text {
+      font-size: 20px;
+      line-height: 1.2em; }
+    .section1 .content .button {
+      border: solid 1px black;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 20px 0; }
+
+h2 {
+  margin: 100px auto 50px;
+  font-size: 24px;
+  border-bottom: solid 1px black;
+  padding: 10px;
+  text-align: center;
+  width: 250px; }
+
+.section2 {
+  height: 593px;
+  background-image: url("./../img/img.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative; }
+  .section2 .content {
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    width: 50%;
+    text-align: right; }
+    .section2 .content .title {
+      font-size: 40px;
+      margin-bottom: 30px; }
+    .section2 .content .text {
+      font-size: 20px;
+      line-height: 1.2em; }
+    .section2 .content .button {
+      border: solid 1px black;
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 20px 0 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
