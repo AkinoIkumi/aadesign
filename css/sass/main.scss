@@ -93,13 +93,14 @@ footer {
 
 .section_a_left {
     height: 593px;
-    background-image: url("/aadesign/img/about.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
     position: relative;
     width: 1280px;
     margin: auto;
+
+    .content_img {
+        float: right;
+        height: 593px;
+    }
 
     .content {
         position: absolute;
@@ -190,13 +191,14 @@ footer {
 
 .section_a_right {
     height: 593px;
-    background-image: url("/aadesign/img/logo.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
     position: relative;
     width: 1280px;
     margin: auto;
+
+    .content_img {
+        float: left;
+        height: 593px;
+    }
 
     .content {
         position: absolute;

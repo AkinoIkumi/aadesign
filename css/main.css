@@ -63,13 +63,12 @@ footer {
 
 .section_a_left {
   height: 593px;
-  background-image: url("/aadesign/img/about.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   position: relative;
   width: 1280px;
   margin: auto; }
+  .section_a_left .content_img {
+    float: right;
+    height: 593px; }
   .section_a_left .content {
     position: absolute;
     left: 0;
@@ -145,13 +144,12 @@ footer {
 
 .section_a_right {
   height: 593px;
-  background-image: url("/aadesign/img/logo.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
   position: relative;
   width: 1280px;
   margin: auto; }
+  .section_a_right .content_img {
+    float: left;
+    height: 593px; }
   .section_a_right .content {
     position: absolute;
     right: 0;
