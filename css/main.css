@@ -63,7 +63,7 @@ footer {
 
 .section_a_left {
   height: 593px;
-  background-image: url("./../img/about.jpg");
+  background-image: url("/img/about.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -145,7 +145,7 @@ footer {
 
 .section_a_right {
   height: 593px;
-  background-image: url("./../img/logo.jpg");
+  background-image: url("/img/logo.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
