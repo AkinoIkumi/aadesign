@@ -18,6 +18,18 @@ $title-width: 100px;
     cursor: pointer;
 }
 
+.disp-pc {
+    display: block;
+}
+
+.disp-sp {
+    display: none;
+}
+
+.clearfix {
+    @extend %clearfix;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -225,6 +237,10 @@ footer {
     }
 }
 
+.button {
+    @include button;
+}
+
 .button-black {
     @include button;
     background-color: black;
@@ -253,4 +269,82 @@ footer {
 .copyright {
     margin: 15px;
     text-align: center;
+}
+
+
+@media screen and (max-width:680px) {
+    .disp-pc {
+        display: none;
+    }
+
+    .disp-sp {
+        display: block;
+    }
+
+    header {
+        font-size: 2em;
+        min-width: 320px;
+
+        .header-menu {
+            height: 40px;
+            width: 40px;
+            float: right;
+        }
+
+        nav {
+            display: none;
+            width: auto;
+
+            ul {
+
+                li {
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        min-width: 320px;
+        height: $header-height;
+        padding: 15px;
+        font-size: 1.6em;
+        border-top: solid 1px gray;
+        margin-top: 50px;
+
+        .title {
+            cursor: pointer;
+            float: left;
+            width: $title-width;
+            line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+        }
+    }
+
+    .content_img_sp {
+        width: 100%;
+    }
+
+    .content_sp {
+        padding: 8px 16px;
+        font-size: 1.6em;
+        line-height: 1.6em;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .section_title_a_horizon_sp {
+        width: 30px;
+        border: none;
+        background-color: gray;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        margin: 15px auto;
+    }
 }
