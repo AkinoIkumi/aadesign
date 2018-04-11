@@ -67,6 +67,10 @@ footer {
     width: 100px;
     line-height: calc(56px - calc(8px * 2)); }
 
+iframe {
+  margin: 50px auto;
+  display: block; }
+
 .section_a_left {
   height: 593px;
   position: relative;
