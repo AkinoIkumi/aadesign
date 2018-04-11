@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
+    <!-- <script src="./js/smooth-scroll.js"></script> -->
     <script src="./js/main.js"></script>
 
     <title></title>
@@ -25,11 +27,11 @@
         <img class="disp-sp header-menu" src="./img/menu.png" alt="menu">
         <nav>
             <ul>
-                <li>Work-Contact design</li>
-                <li>Work-Member design</li>
-                <li>Work-logo design</li>
-                <li>Work-web design</li>
-                <li>About</li>
+                <li><a class="link-reset" href="#section_price">Contact</a></li>
+                <li><a class="link-reset" href="#section_price">Price</a></li>
+                <li><a class="link-reset" href="#section_logo">Work-logo design</a></li>
+                <li><a class="link-reset" href="#section_logo">Work-web design</a></li>
+                <li><a class="link-reset" href="#section_about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +39,7 @@
     <main>
 
         <div class="disp-pc">
-            <h2 class="section_title_a">About AA.design.</h2>
+            <h2 id="section_about" class="section_title_a">About AA.design.</h2>
             <hr class="section_title_a_horizon">
             <section class="section_a_left disp-pc">
                 <div class="content">
@@ -50,9 +52,11 @@
                     <div class="button">
                         About
                     </div>
-                    <div class="button button-black">
-                        Contact
-                    </div>
+                    <a class="link-reset" href="mailto:aa.design@aadesign.net.in">
+                        <div class="button button-black">
+                            Contact
+                        </div>
+                    </a>
                 </div>
                 <img class="content_img" src="./img/about.jpg" alt="about">
             </section>
@@ -71,12 +75,14 @@
             <div class="button">
                 Work
             </div>
-            <div class="button button-black">
-                Contact
-            </div>
+            <a class="link-reset" href="mailto:aa.design@aadesign.net.in">
+                <div class="button button-black">
+                    Contact
+                </div>
+            </a>
         </div>
 
-        <h2 class="section_title_a">Work of Logo design</h2>
+        <h2 id="section_logo" class="section_title_a">Work of Logo design</h2>
         <hr class="section_title_a_horizon">
         <section class="section_a_right disp-pc">
             <div class="content">
@@ -89,14 +95,16 @@
                 <div class="button">
                     Work
                 </div>
-                <div class="button button-black">
-                    Contact
-                </div>
+                <a class="link-reset" href="mailto:aa.design@aadesign.net.in">
+                    <div class="button button-black">
+                        Contact
+                    </div>
+                </a>
             </div>
             <img class="content_img" src="./img/logo.jpg" alt="logo">
         </section>
 
-        <h2 class="section_title_a">Price</h2>
+        <h2 id="section_price" class="section_title_a">Price</h2>
         <hr class="section_title_a_horizon">
         <section class="section_b_left disp-pc">
             <div class="content">
@@ -106,9 +114,11 @@
                 <div class="text">
                     最小価格 30,000 ~。<br> ミニマルデザインだから実現できる価格。<br> 必要なものを必要な分だけ作る。
                 </div>
-                <div class="button button-black">
-                    Contact
-                </div>
+                <a class="link-reset" href="mailto:aa.design@aadesign.net.in">
+                    <div class="button button-black">
+                        Contact
+                    </div>
+                </a>
             </div>
 
             <table>
@@ -142,6 +152,10 @@
         <div class="copyright">Copyright © 2018 AA.design. All Rights Reserved.</div>
     </footer>
 
+    <script>
+        // スムーススクロールを起動する
+        smoothScroll.init();
+    </script>
 </body>
 
 </html>
