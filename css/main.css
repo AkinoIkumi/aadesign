@@ -103,6 +103,17 @@ iframe {
     .section_a_left .content .button-black {
       background-color: black;
       color: white; }
+  .section_a_left .appeal {
+    position: absolute;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    font-size: 2em;
+    color: white;
+    top: 40%;
+    line-height: 1.6em; }
+    .section_a_left .appeal span {
+      text-align: right; }
 
 .section_b_left {
   height: auto;
