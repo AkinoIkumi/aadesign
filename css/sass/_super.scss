@@ -15,6 +15,14 @@
     color: inherit;
 }
 
+.flt-r {
+    float: right;
+}
+
+.flt-l {
+    float: left;
+}
+
 @media screen and (max-width:680px) {
     .disp-pc {
         display: none;

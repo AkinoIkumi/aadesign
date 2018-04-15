@@ -18,8 +18,28 @@
 }
 
 main {
+    margin: auto;
     margin-top: 106px;
-    min-width: 1280px
+    width: 1280px;
+}
+
+.about_title {
+    font-size: 3em;
+}
+
+.about_text {
+    margin-top: 50px;
+    font-size: 1.6em;
+    line-height: 1.6em;
+
+    img {
+        width: 40%;
+    }
+
+    &_box {
+        width: 50%;
+        margin-bottom: 50px;
+    }
 }
 
 .site-list {
@@ -261,8 +281,8 @@ iframe {
     }
 
     main {
+        width: 480px;
         margin-top: 0;
-        min-width: 480px;
     }
 
     .content_img_sp {

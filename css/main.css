@@ -31,6 +31,12 @@ main {
   text-decoration: none;
   color: inherit; }
 
+.flt-r {
+  float: right; }
+
+.flt-l {
+  float: left; }
+
 @media screen and (max-width: 680px) {
   .disp-pc {
     display: none; }
@@ -191,8 +197,22 @@ footer {
       border-radius: 100%; }
 
 main {
+  margin: auto;
   margin-top: 106px;
-  min-width: 1280px; }
+  width: 1280px; }
+
+.about_title {
+  font-size: 3em; }
+
+.about_text {
+  margin-top: 50px;
+  font-size: 1.6em;
+  line-height: 1.6em; }
+  .about_text img {
+    width: 40%; }
+  .about_text_box {
+    width: 50%;
+    margin-bottom: 50px; }
 
 .site-list {
   width: 100%; }
@@ -395,8 +415,8 @@ iframe {
     min-width: 480px; }
 
   main {
-    margin-top: 0;
-    min-width: 480px; }
+    width: 480px;
+    margin-top: 0; }
 
   .content_img_sp {
     width: 100%; }
