@@ -73,9 +73,25 @@ header {
     font-size: 2em;
     min-width: 320px; }
     header .header-menu {
-      height: 40px;
-      width: 40px;
-      float: right; } }
+      float: right;
+      display: block; }
+      header .header-menu img {
+        height: 40px;
+        width: 40px; }
+    header .close {
+      float: right;
+      cursor: pointer; }
+    header nav {
+      display: none;
+      width: 100%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 8px 16px;
+      height: 100%; }
+      header nav ul li {
+        width: 100%; } }
 footer {
   width: 100%;
   min-width: 980px;

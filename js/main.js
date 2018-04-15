@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
 
     $('.sidebar').find('a').on('click', function() {
         setSidebarActice($(this).parent('li'));
@@ -16,13 +16,21 @@ $(function(){
         return false;
     });
 
-    $("#header").load("/template/header.html");
+    $("#header").load("/template/header.html", function() {
+        $(".header-menu, .close").on('click', function() {
+            spMenu();
+        });
+    });
     $("#footer").load("/template/footer.html");
-
 });
 
 function setSidebarActice($clicked)
 {
     $('.sidebar').find('.active').removeClass('active');
     $($clicked).addClass('active');
+}
+
+function spMenu()
+{
+    $("header nav").slideToggle();
 }

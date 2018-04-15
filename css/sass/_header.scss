@@ -45,9 +45,35 @@ header {
         min-width: 320px;
 
         .header-menu {
-            height: 40px;
-            width: 40px;
             float: right;
+            display: block;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: $default-vertical-pad $default-horizon-pad;
+            height: 100%;
+
+            ul {
+                li {
+                    width: 100%;
+                }
+            }
         }
     }
 }
