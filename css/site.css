@@ -1,0 +1,9 @@
+/* resetだけでは足りない設定を書くためのオリジナルcss */
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}

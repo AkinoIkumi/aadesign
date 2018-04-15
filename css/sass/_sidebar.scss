@@ -1,0 +1,89 @@
+.layout-1-sidebar {
+    position: relative;
+    margin-top: 10px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        background-color: black;
+        height: 100%;
+        left: 35px;
+        width: 1px;
+        top: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-color: black;
+        height: 5px;
+        left: 33px;
+        width: 5px;
+        border-radius: 100%;
+    }
+}
+
+.sidebar-title {
+    font-size: 2em;
+    position: relative;
+    padding: 5px 0 5px 35px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        background-color: black;
+        height: 1px;
+        left: 0;
+        width: 75%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        height: 5px;
+        right: 25%;
+        width: 5px;
+        border-radius: 100%;
+    }
+}
+
+.sidebar {
+    margin-top: 20px;
+    padding-left: 35px;
+
+    li {
+        font-size: 1.6em;
+        line-height: 1.6em;
+        padding: 5px 0;
+    }
+
+    .active {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            background-color: black;
+            height: 1px;
+            left: 0;
+            width: 50%;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            height: 5px;
+            right: 50%;
+            width: 5px;
+            border-radius: 100%;
+        }
+    }
+}
