@@ -16,12 +16,12 @@ $(function() {
         return false;
     });
 
-    $("#header").load("./../template/header.html", function() {
+    $("#header").load("./template/header.html", function() {
         $(".header-menu, .close").on('click', function() {
             spMenu();
         });
     });
-    $("#footer").load("./../template/footer.html");
+    $("#footer").load("./template/footer.html");
 });
 
 function setSidebarActice($clicked)
