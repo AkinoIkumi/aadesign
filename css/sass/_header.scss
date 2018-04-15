@@ -1,0 +1,53 @@
+header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    min-width: 980px;
+    height: $header-height;
+    padding: $default-vertical-pad $default-horizon-pad;
+    font-size: 1.6em;
+    border-bottom: solid 1px gray;
+
+    .title {
+        cursor: pointer;
+        float: left;
+        width: $title-width;
+        line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+    }
+
+    nav {
+        float: left;
+        width: calc(100% - #{$title-width});
+
+        ul {
+            @extend %clearfix;
+            display: block;
+            margin-left: auto;
+            max-width: 780px;
+            padding: 0 $default-horizon-pad;
+
+            li {
+                text-decoration: none;
+                cursor: pointer;
+                padding: 0 8px;
+                float: right;
+                line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+            }
+        }
+    }
+}
+
+@media screen and (max-width:680px) {
+    header {
+        font-size: 2em;
+        min-width: 320px;
+
+        .header-menu {
+            height: 40px;
+            width: 40px;
+            float: right;
+        }
+    }
+}

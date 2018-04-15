@@ -1,0 +1,34 @@
+footer {
+    width: 100%;
+    min-width: 980px;
+    height: $header-height;
+    padding: 15px;
+    font-size: 1.6em;
+    border-top: solid 1px gray;
+    margin-top: 50px;
+
+    .title {
+        cursor: pointer;
+        float: left;
+        width: $title-width;
+        line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+    }
+}
+
+@media screen and (max-width:680px) {
+    footer {
+        min-width: 480px;
+        height: $header-height;
+        padding: 15px;
+        font-size: 1.6em;
+        border-top: solid 1px gray;
+        margin-top: 50px;
+
+        .title {
+            cursor: pointer;
+            float: left;
+            width: $title-width;
+            line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
+        }
+    }
+}

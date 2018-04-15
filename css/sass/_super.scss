@@ -1,0 +1,26 @@
+.disp-pc {
+    display: block;
+}
+
+.disp-sp {
+    display: none;
+}
+
+.clearfix {
+    @extend %clearfix;
+}
+
+.link-reset {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width:680px) {
+    .disp-pc {
+        display: none;
+    }
+
+    .disp-sp {
+        display: block;
+    }
+}
