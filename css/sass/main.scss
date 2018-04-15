@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import "variable";
 @import "layout";
+@import "super";
+@import "header";
+@import "footer";
 @import "sidebar";
 
 @mixin button {
@@ -14,25 +17,9 @@
     cursor: pointer;
 }
 
-.disp-pc {
-    display: block;
-}
-
-.disp-sp {
-    display: none;
-}
-
-.clearfix {
-    @extend %clearfix;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.link-reset {
-    text-decoration: none;
-    color: inherit;
+main {
+    margin-top: 106px;
+    min-width: 1280px
 }
 
 .site-list {
@@ -76,63 +63,6 @@ body {
     min-width: 980px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 100;
-    width: 100%;
-    min-width: 980px;
-    height: $header-height;
-    padding: $default-vertical-pad $default-horizon-pad;
-    font-size: 1.6em;
-
-    .title {
-        cursor: pointer;
-        float: left;
-        width: $title-width;
-        line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
-    }
-
-    nav {
-        float: left;
-        width: calc(100% - #{$title-width});
-
-        ul {
-            @extend %clearfix;
-            display: block;
-            margin-left: auto;
-            max-width: 780px;
-            padding: 0 $default-horizon-pad;
-
-            li {
-                text-decoration: none;
-                cursor: pointer;
-                padding: 0 8px;
-                float: right;
-                line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
-            }
-        }
-    }
-}
-
-footer {
-    width: 100%;
-    min-width: 980px;
-    height: $header-height;
-    padding: 15px;
-    font-size: 1.6em;
-    border-top: solid 1px gray;
-    margin-top: 50px;
-
-    .title {
-        cursor: pointer;
-        float: left;
-        width: $title-width;
-        line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
-    }
 }
 
 iframe {
@@ -325,51 +255,13 @@ iframe {
 
 
 @media screen and (max-width:680px) {
-    .disp-pc {
-        display: none;
+    body {
+        width: 480px;
+        min-width: 480px;
     }
 
-    .disp-sp {
-        display: block;
-    }
-
-    header {
-        font-size: 2em;
-        min-width: 320px;
-
-        .header-menu {
-            height: 40px;
-            width: 40px;
-            float: right;
-        }
-
-        nav {
-            display: none;
-            width: auto;
-
-            ul {
-
-                li {
-                }
-            }
-        }
-    }
-
-    footer {
-        width: 100%;
-        min-width: 320px;
-        height: $header-height;
-        padding: 15px;
-        font-size: 1.6em;
-        border-top: solid 1px gray;
-        margin-top: 50px;
-
-        .title {
-            cursor: pointer;
-            float: left;
-            width: $title-width;
-            line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
-        }
+    main {
+        min-width: 480px;
     }
 
     .content_img_sp {

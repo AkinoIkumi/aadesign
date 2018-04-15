@@ -1,5 +1,9 @@
 $(function(){
 
+    $('.sidebar').find('a').on('click', function() {
+        setSidebarActice($(this).parent('li'));
+    });
+
     // #で始まるアンカーをクリックした場合に処理
     $('a[href^="#"]').click(function() {
         var speed    = 300;
@@ -16,3 +20,9 @@ $(function(){
     $("#footer").load("/template/footer.html");
 
 });
+
+function setSidebarActice($clicked)
+{
+    $('.sidebar').find('.active').removeClass('active');
+    $($clicked).addClass('active');
+}
