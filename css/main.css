@@ -395,6 +395,7 @@ iframe {
     min-width: 480px; }
 
   main {
+    margin-top: 0;
     min-width: 480px; }
 
   .content_img_sp {
