@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import "variable";
 @import "layout";
-
-$header-height: 56px;
-$default-vertical-pad: 8px;
-$default-horizon-pad: 16px;
-$title-width: 100px;
+@import "sidebar";
 
 @mixin button {
     padding: 8px 16px;
@@ -39,9 +35,45 @@ $title-width: 100px;
     color: inherit;
 }
 
+.site-list {
+    @extend %clearfix;
+    width: 100%;
+
+    li {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        margin-bottom: 50px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 2em;
+            line-height: 1.6em;
+        }
+
+        .genre {
+            font-size: 2em;
+            line-height: 1.6em;
+        }
+
+        hr {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
 body {
     font-family: 'Lora', serif;
     font-size: 10px;
+    min-width: 980px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

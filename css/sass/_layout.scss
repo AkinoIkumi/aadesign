@@ -3,3 +3,26 @@
     content: "";
     display: block;
 }
+
+main {
+    margin-top: 56px;
+}
+
+.layout-1 {
+    @extend %clearfix;
+    margin: auto;
+
+    &-sidebar {
+        float: left;
+        width: 27%;
+        margin-left: 3%;
+        padding: $default-vertical-pad $default-horizon-pad;
+    }
+
+    &-main {
+        float: right;
+        width: 60%;
+        margin-right: 10%;
+        padding: $default-vertical-pad $default-horizon-pad;
+    }
+}
