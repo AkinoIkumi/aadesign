@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lora");
-.layout-1:after, .clearfix:after, header nav ul:after, .site-list:after, .section_b_left:after, .sns-links:after {
+.layout-1:after, .clearfix:after, header nav ul:after, .disp-pc .site-list:after, .section_b_left:after, .sns-links:after {
   clear: both;
   content: "";
   display: block; }
@@ -215,24 +215,24 @@ main {
     width: 50%;
     margin-bottom: 50px; }
 
-.site-list {
+.disp-pc .site-list {
   width: 100%; }
-  .site-list li {
+  .disp-pc .site-list li {
     float: left;
     width: 32%;
     margin-right: 2%;
     margin-bottom: 50px; }
-    .site-list li:nth-child(3n) {
+    .disp-pc .site-list li:nth-child(3n) {
       margin-right: 0; }
-    .site-list li img {
+    .disp-pc .site-list li img {
       width: 100%; }
-    .site-list li .title {
+    .disp-pc .site-list li .title {
       font-size: 2em;
       line-height: 1.6em; }
-    .site-list li .genre {
+    .disp-pc .site-list li .genre {
       font-size: 2em;
       line-height: 1.6em; }
-    .site-list li hr {
+    .disp-pc .site-list li hr {
       width: 100%;
       margin: 0; }
 
@@ -466,6 +466,47 @@ table {
     text-align: center; }
     table td, table th {
       padding: 8px 40px;
-      border: solid 1px black; } }
+      border: solid 1px black; }
+
+  .select {
+    margin-top: 65px; }
+    .select .title {
+      font-size: 2em;
+      width: 100%;
+      padding: 8px 16px; }
+    .select select {
+      font-size: 3em;
+      width: 100%;
+      padding: 8px 16px;
+      display: block;
+      margin: auto; }
+    .select hr {
+      display: block;
+      margin: 0 16px; }
+
+  .site-list {
+    width: 100%;
+    margin-top: 30px;
+    padding: 8px 16px; }
+    .site-list li {
+      float: left;
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 50px; }
+      .site-list li:nth-child(2n) {
+        margin-right: 0; }
+      .site-list li img {
+        width: 100%; }
+      .site-list li .title {
+        font-size: 2em;
+        line-height: 1.6em;
+        padding: 0; }
+      .site-list li .genre {
+        font-size: 2em;
+        line-height: 1.6em;
+        padding: 0; }
+      .site-list li hr {
+        width: 100%;
+        margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */

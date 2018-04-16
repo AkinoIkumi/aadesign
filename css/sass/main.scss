@@ -42,37 +42,39 @@ main {
     }
 }
 
-.site-list {
-    @extend %clearfix;
-    width: 100%;
+.disp-pc {
+    .site-list {
+        @extend %clearfix;
+        width: 100%;
 
-    li {
-        float: left;
-        width: 32%;
-        margin-right: 2%;
-        margin-bottom: 50px;
+        li {
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            margin-bottom: 50px;
 
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
 
-        img {
-            width: 100%;
-        }
+            img {
+                width: 100%;
+            }
 
-        .title {
-            font-size: 2em;
-            line-height: 1.6em;
-        }
+            .title {
+                font-size: 2em;
+                line-height: 1.6em;
+            }
 
-        .genre {
-            font-size: 2em;
-            line-height: 1.6em;
-        }
+            .genre {
+                font-size: 2em;
+                line-height: 1.6em;
+            }
 
-        hr {
-            width: 100%;
-            margin: 0;
+            hr {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 }
@@ -346,6 +348,67 @@ table {
         td, th {
             padding: 8px 40px;
             border: solid 1px black;
+        }
+    }
+
+    .select {
+        margin-top: 65px;
+
+        .title {
+            font-size: 2em;
+            width: 100%;
+            padding: $default-vertical-pad $default-horizon-pad;
+        }
+
+        select {
+            font-size: 3em;
+            width: 100%;
+            padding: $default-vertical-pad $default-horizon-pad;
+            display: block;
+            margin: auto;
+        }
+
+        hr {
+            display: block;
+            margin: 0 16px;
+        }
+    }
+
+    .site-list {
+        width: 100%;
+        margin-top: 30px;
+        padding: $default-vertical-pad $default-horizon-pad;
+
+        li {
+            float: left;
+            width: 49%;
+            margin-right: 2%;
+            margin-bottom: 50px;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .title {
+                font-size: 2em;
+                line-height: 1.6em;
+                padding: 0;
+            }
+
+            .genre {
+                font-size: 2em;
+                line-height: 1.6em;
+                padding: 0;
+            }
+
+            hr {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 }
