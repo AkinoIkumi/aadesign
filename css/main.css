@@ -318,13 +318,14 @@ iframe {
     .section_b_left .content .button-black {
       background-color: black;
       color: white; }
-  .section_b_left table {
-    float: left;
-    font-size: 2em;
-    text-align: center; }
-    .section_b_left table td, .section_b_left table th {
-      padding: 8px 40px;
-      border: solid 1px black; }
+
+table {
+  float: left;
+  font-size: 2em;
+  text-align: center; }
+  table td, table th {
+    padding: 8px 40px;
+    border: solid 1px black; }
 
 .section_title_a {
   margin: 75px auto 0;
@@ -456,6 +457,15 @@ iframe {
       width: 100%; }
     .about_text_box {
       width: 100%;
-      margin-bottom: 50px; } }
+      margin-bottom: 50px; }
+
+  table {
+    margin: 8px 16px;
+    float: none;
+    font-size: 1.6em;
+    text-align: center; }
+    table td, table th {
+      padding: 8px 40px;
+      border: solid 1px black; } }
 
 /*# sourceMappingURL=main.css.map */

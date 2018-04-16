@@ -175,16 +175,18 @@ iframe {
             color: white;
         }
     }
+}
 
-    table {
-        float: left;
-        font-size: 2em;
-        text-align: center;
 
-        td, th {
-            padding: 8px 40px;
-            border: solid 1px black;
-        }
+
+table {
+    float: left;
+    font-size: 2em;
+    text-align: center;
+
+    td, th {
+        padding: 8px 40px;
+        border: solid 1px black;
     }
 }
 
@@ -332,6 +334,18 @@ iframe {
         &_box {
             width: 100%;
             margin-bottom: 50px;
+        }
+    }
+
+    table {
+        margin: $default-vertical-pad $default-horizon-pad;
+        float: none;
+        font-size: 1.6em;
+        text-align: center;
+
+        td, th {
+            padding: 8px 40px;
+            border: solid 1px black;
         }
     }
 }
