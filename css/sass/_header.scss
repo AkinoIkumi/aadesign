@@ -42,7 +42,8 @@ header {
 @media screen and (max-width:680px) {
     header {
         font-size: 2em;
-        min-width: 320px;
+        min-width: 480px;
+        width: 480px;
 
         .header-menu {
             float: right;
@@ -61,7 +62,7 @@ header {
 
         nav {
             display: none;
-            width: 100%;
+            width: 480px;
             background-color: white;
             position: fixed;
             top: 0;

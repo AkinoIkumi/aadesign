@@ -77,7 +77,8 @@ header {
 @media screen and (max-width: 680px) {
   header {
     font-size: 2em;
-    min-width: 320px; }
+    min-width: 480px;
+    width: 480px; }
     header .header-menu {
       float: right;
       display: block; }
@@ -89,7 +90,7 @@ header {
       cursor: pointer; }
     header nav {
       display: none;
-      width: 100%;
+      width: 480px;
       background-color: white;
       position: fixed;
       top: 0;
@@ -114,7 +115,7 @@ footer {
 
 @media screen and (max-width: 680px) {
   footer {
-    min-width: 320px;
+    min-width: 480px;
     height: 56px;
     padding: 15px;
     font-size: 1.6em;
@@ -411,11 +412,12 @@ iframe {
 
 @media screen and (max-width: 680px) {
   body {
-    width: 320px;
-    min-width: 320px; }
+    width: 480px;
+    min-width: 480px; }
 
   main {
-    width: 320px;
+    width: 480px;
+    min-width: 480px;
     margin-top: 0; }
 
   .content_img_sp {
@@ -439,6 +441,21 @@ iframe {
     margin-bottom: 15px; }
 
   .button {
-    margin: 15px auto; } }
+    margin: 15px auto; }
+
+  .about_title {
+    font-size: 2em; }
+
+  .about_text {
+    margin-top: 50px;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    width: 100%;
+    padding: 8px 16px; }
+    .about_text img {
+      width: 100%; }
+    .about_text_box {
+      width: 100%;
+      margin-bottom: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
