@@ -16,6 +16,10 @@ $(function() {
         return false;
     });
 
+    $(".header-menu, .close").on('click', function() {
+        spMenu();
+    });
+
     $("#header").load("./template/header.html", function() {
         $(".header-menu, .close").on('click', function() {
             spMenu();
