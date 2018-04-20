@@ -13,20 +13,3 @@ footer {
         line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
     }
 }
-
-@media screen and (max-width:680px) {
-    footer {
-        height: $footer-height;
-        padding: 15px;
-        font-size: 1.6em;
-        border-top: solid 1px gray;
-        margin-top: 50px;
-
-        .title {
-            cursor: pointer;
-            float: left;
-            width: $title-width;
-            line-height: calc(#{$header-height} - calc(#{$default-vertical-pad} * 2));
-        }
-    }
-}

@@ -175,18 +175,6 @@ footer {
     width: 100px;
     line-height: calc(56px - calc(8px * 2)); }
 
-@media screen and (max-width: 680px) {
-  footer {
-    height: 56px;
-    padding: 15px;
-    font-size: 1.6em;
-    border-top: solid 1px gray;
-    margin-top: 50px; }
-    footer .title {
-      cursor: pointer;
-      float: left;
-      width: 100px;
-      line-height: calc(56px - calc(8px * 2)); } }
 .layout-1-sidebar {
   position: relative;
   margin-top: 10px; }
