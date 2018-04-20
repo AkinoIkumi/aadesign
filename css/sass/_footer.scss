@@ -1,7 +1,6 @@
 footer {
-    width: 100%;
-    min-width: 980px;
-    height: $header-height;
+    @include site-width;
+    height: $footer-height;
     padding: 15px;
     font-size: 1.6em;
     border-top: solid 1px gray;
@@ -17,8 +16,7 @@ footer {
 
 @media screen and (max-width:680px) {
     footer {
-        min-width: 480px;
-        height: $header-height;
+        height: $footer-height;
         padding: 15px;
         font-size: 1.6em;
         border-top: solid 1px gray;

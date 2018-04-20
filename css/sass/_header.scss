@@ -1,12 +1,11 @@
 header {
+    @include site-width;
+    @include default-pad;
     position: fixed;
     top: 0;
     background-color: white;
     z-index: 100;
-    width: 100%;
-    min-width: 980px;
     height: $header-height;
-    padding: $default-vertical-pad $default-horizon-pad;
     font-size: 1.6em;
     border-bottom: solid 1px gray;
 
@@ -22,10 +21,9 @@ header {
         width: calc(100% - #{$title-width});
 
         ul {
-            @extend %clearfix;
+            @include clearfix;
             display: block;
             margin-left: auto;
-            max-width: 780px;
             padding: 0 $default-horizon-pad;
 
             li {
@@ -39,11 +37,15 @@ header {
     }
 }
 
+.header-dummy {
+    @include site-width;
+    width: 100%;
+    height: $header-height;
+}
+
 @media screen and (max-width:680px) {
     header {
         font-size: 2em;
-        min-width: 480px;
-        width: 480px;
 
         .header-menu {
             float: right;
@@ -62,13 +64,13 @@ header {
 
         nav {
             display: none;
-            width: 480px;
             background-color: white;
             position: fixed;
             top: 0;
             left: 0;
             padding: $default-vertical-pad $default-horizon-pad;
             height: 100%;
+            width: 100%;
 
             ul {
                 li {

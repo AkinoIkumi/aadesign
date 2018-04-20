@@ -2,26 +2,10 @@
 @import "variable";
 @import "layout";
 @import "super";
+@import "block";
 @import "header";
 @import "footer";
 @import "sidebar";
-
-@mixin button {
-    padding: 8px 16px;
-    border: solid 1px black;
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 24px;
-    cursor: pointer;
-}
-
-main {
-    margin: auto;
-    margin-top: 106px;
-    width: 1280px;
-}
 
 .about_title {
     font-size: 3em;
@@ -44,7 +28,7 @@ main {
 
 .disp-pc {
     .site-list {
-        @extend %clearfix;
+        @include clearfix;
         width: 100%;
 
         li {
@@ -77,14 +61,6 @@ main {
             }
         }
     }
-}
-
-body {
-    font-family: 'Lora', serif;
-    font-size: 10px;
-    min-width: 980px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 iframe {
@@ -124,7 +100,7 @@ iframe {
             margin: 20px 0;
         }
 
-        .button-black {
+        .button--black {
             background-color: black;
             color: white;
         }
@@ -147,7 +123,7 @@ iframe {
 }
 
 .section_b_left {
-    @extend %clearfix;
+    @include clearfix;
     height: auto;
     position: relative;
     width: 1280px;
@@ -172,7 +148,7 @@ iframe {
             margin: 20px 0;
         }
 
-        .button-black {
+        .button--black {
             background-color: black;
             color: white;
         }
@@ -247,7 +223,7 @@ table {
     @include button;
 }
 
-.button-black {
+.button--black {
     @include button;
     background-color: black;
     color: white;
@@ -255,7 +231,7 @@ table {
 
 .sns-links {
     margin: auto;
-    @extend %clearfix;
+    @include clearfix;
     width: 165px;
 
     li {

@@ -1,15 +1,41 @@
-%clearfix:after {
-    clear: both;
-    content: "";
-    display: block;
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+@mixin default-pad {
+    padding: $default-vertical-pad $default-horizon-pad;
+}
+
+@mixin site-width {
+    width: 100%;
+    min-width: 1280px;
+
+    @media screen and (max-width:680px) {
+        min-width: 320px;
+    }
+}
+
+body {
+    @include site-width;
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    min-width: 980px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-    margin-top: 56px;
+    @include site-width;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .layout-1 {
-    @extend %clearfix;
+    @include clearfix;
     min-width: 1280px;
     margin: auto;
 

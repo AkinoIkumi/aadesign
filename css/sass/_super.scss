@@ -7,7 +7,7 @@
 }
 
 .clearfix {
-    @extend %clearfix;
+    @include clearfix;
 }
 
 .link-reset {
