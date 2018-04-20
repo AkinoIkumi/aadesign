@@ -257,7 +257,6 @@ table {
     }
 
     .content_sp {
-        padding: 8px 16px;
         font-size: 1.6em;
         line-height: 1.6em;
     }
@@ -302,13 +301,14 @@ table {
     }
 
     table {
-        margin: $default-vertical-pad $default-horizon-pad;
+        width: 100%;
+        margin: 16px 0;
         float: none;
         font-size: 1.6em;
         text-align: center;
 
         td, th {
-            padding: 8px 40px;
+            padding: 4px;
             border: solid 1px black;
         }
     }
