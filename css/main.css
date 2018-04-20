@@ -19,9 +19,15 @@ main {
   @media screen and (max-width: 680px) {
     main {
       min-width: 320px; } }
+  main .contents {
+    margin-top: 20px; }
+
+h1 {
+  font-size: 3em;
+  margin: 20px 0; }
 
 .layout-1 {
-  min-width: 1280px;
+  width: 100%;
   margin: auto; }
   .layout-1:after {
     clear: both;
@@ -29,8 +35,7 @@ main {
     display: block; }
   .layout-1-sidebar {
     float: left;
-    width: 27%;
-    margin-left: 3%;
+    width: 30%;
     padding: 8px 16px; }
   .layout-1-main {
     float: right;
@@ -38,6 +43,14 @@ main {
     margin-right: 10%;
     padding: 8px 16px; }
 
+@media screen and (max-width: 680px) {
+  main {
+    padding: 8px 16px; }
+    main .contents {
+      margin-top: 0; }
+
+  h1 {
+    font-size: 2em; } }
 .disp-pc {
   display: block; }
 
@@ -245,9 +258,6 @@ footer {
       right: 50%;
       width: 5px;
       border-radius: 100%; }
-
-.about_title {
-  font-size: 3em; }
 
 .about_text {
   margin-top: 50px;
@@ -461,15 +471,6 @@ table {
   text-align: center; }
 
 @media screen and (max-width: 680px) {
-  body {
-    width: 480px;
-    min-width: 480px; }
-
-  main {
-    width: 480px;
-    min-width: 480px;
-    margin-top: 0; }
-
   .content_img_sp {
     width: 100%; }
 
@@ -500,10 +501,10 @@ table {
     margin-top: 50px;
     font-size: 1.6em;
     line-height: 1.6em;
-    width: 100%;
-    padding: 8px 16px; }
+    width: 100%; }
     .about_text img {
-      width: 100%; }
+      width: 100%;
+      margin: 8px 0; }
     .about_text_box {
       width: 100%;
       margin-bottom: 50px; }
@@ -517,26 +518,22 @@ table {
       padding: 8px 40px;
       border: solid 1px black; }
 
-  .select {
-    margin-top: 65px; }
-    .select .title {
-      font-size: 2em;
-      width: 100%;
-      padding: 8px 16px; }
-    .select select {
-      font-size: 3em;
-      width: 100%;
-      padding: 8px 16px;
-      display: block;
-      margin: auto; }
-    .select hr {
-      display: block;
-      margin: 0 16px; }
+  .select .title {
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 10px; }
+  .select select {
+    font-size: 3em;
+    width: 100%;
+    display: block;
+    margin: auto; }
+  .select hr {
+    display: block;
+    margin: 0 16px; }
 
   .site-list {
     width: 100%;
-    margin-top: 30px;
-    padding: 8px 16px; }
+    margin-top: 30px; }
     .site-list li {
       float: left;
       width: 49%;

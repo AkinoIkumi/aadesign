@@ -7,10 +7,6 @@
 @import "footer";
 @import "sidebar";
 
-.about_title {
-    font-size: 3em;
-}
-
 .about_text {
     margin-top: 50px;
     font-size: 1.6em;
@@ -255,16 +251,6 @@ table {
 
 
 @media screen and (max-width:680px) {
-    body {
-        width: 480px;
-        min-width: 480px;
-    }
-
-    main {
-        width: 480px;
-        min-width: 480px;
-        margin-top: 0;
-    }
 
     .content_img_sp {
         width: 100%;
@@ -303,10 +289,10 @@ table {
         font-size: 1.6em;
         line-height: 1.6em;
         width: 100%;
-        padding: $default-vertical-pad $default-horizon-pad;
 
         img {
             width: 100%;
+            margin: 8px 0;
         }
 
         &_box {
@@ -328,18 +314,15 @@ table {
     }
 
     .select {
-        margin-top: 65px;
-
         .title {
             font-size: 2em;
             width: 100%;
-            padding: $default-vertical-pad $default-horizon-pad;
+            margin-bottom: 10px;
         }
 
         select {
             font-size: 3em;
             width: 100%;
-            padding: $default-vertical-pad $default-horizon-pad;
             display: block;
             margin: auto;
         }
@@ -353,7 +336,6 @@ table {
     .site-list {
         width: 100%;
         margin-top: 30px;
-        padding: $default-vertical-pad $default-horizon-pad;
 
         li {
             float: left;
