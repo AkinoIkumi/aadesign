@@ -32,3 +32,9 @@ h3 {
     font-size: 1.8em;
     margin: 10px 0;
 }
+
+@media screen and (max-width:680px) {
+    p {
+        font-size: 1.4em;
+    }
+}

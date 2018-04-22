@@ -7,6 +7,31 @@
 @import "footer";
 @import "sidebar";
 
+#top-title {
+    text-align: center;
+}
+
+.top-img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media screen and (max-width:680px) {
+    .kv {
+        text-align: center;
+    }
+
+    #top-title {
+        font-size: 1.6em;
+    }
+
+    .top-img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
 .about_text {
     margin-top: 50px;
 
@@ -269,8 +294,6 @@ iframe {
 
     .about_text {
         margin-top: 50px;
-        font-size: 1.6em;
-        line-height: 1.6em;
         width: 100%;
 
         img {

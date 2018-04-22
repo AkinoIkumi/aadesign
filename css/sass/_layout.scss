@@ -60,6 +60,7 @@ main {
 
 @media screen and (max-width:680px) {
     main {
+        padding: 0;
         @include default-pad;
 
         .contents {
