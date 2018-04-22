@@ -274,9 +274,7 @@ footer {
       border-radius: 100%; }
 
 .about_text {
-  margin-top: 50px;
-  font-size: 1.6em;
-  line-height: 1.6em; }
+  margin-top: 50px; }
   .about_text img {
     width: 40%; }
   .about_text_box {
@@ -349,7 +347,6 @@ iframe {
     right: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
-    font-size: 2em;
     color: white;
     top: 40%;
     line-height: 1.6em; }
