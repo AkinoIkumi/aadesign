@@ -30,17 +30,13 @@ body {
 
 main {
     @include site-width;
+    @include default-pad;
     max-width: 1280px;
     margin: auto;
 
     .contents {
         margin-top: 20px;
     }
-}
-
-h1 {
-    font-size: 3em;
-    margin: 20px 0;
 }
 
 .layout-1 {

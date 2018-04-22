@@ -7,3 +7,28 @@
 li {
     list-style: none;
 }
+
+p {
+    font-size: 1.6em;
+    line-height: 1.8em;
+    margin: 10px 0;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}

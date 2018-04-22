@@ -151,19 +151,6 @@ iframe {
     }
 }
 
-
-
-table {
-    float: left;
-    font-size: 2em;
-    text-align: center;
-
-    td, th {
-        padding: 8px 40px;
-        border: solid 1px black;
-    }
-}
-
 .section_title_a {
     margin: 75px auto 0;
     font-size: 24px;
@@ -297,19 +284,6 @@ table {
         &_box {
             width: 100%;
             margin-bottom: 50px;
-        }
-    }
-
-    table {
-        width: 100%;
-        margin: 16px 0;
-        float: none;
-        font-size: 1.6em;
-        text-align: center;
-
-        td, th {
-            padding: 4px;
-            border: solid 1px black;
         }
     }
 

@@ -14,6 +14,7 @@ body {
 main {
   width: 100%;
   min-width: 1280px;
+  padding: 8px 16px;
   max-width: 1280px;
   margin: auto; }
   @media screen and (max-width: 680px) {
@@ -21,10 +22,6 @@ main {
       min-width: 320px; } }
   main .contents {
     margin-top: 20px; }
-
-h1 {
-  font-size: 3em;
-  margin: 20px 0; }
 
 .layout-1 {
   width: 100%;
@@ -102,6 +99,23 @@ h1 {
   background-color: black;
   color: white; }
 
+.price-table {
+  font-size: 2em;
+  text-align: center; }
+  .price-table td, .price-table th {
+    padding: 8px 40px;
+    border: solid 1px black; }
+
+@media screen and (max-width: 680px) {
+  .price-table {
+    width: 100%;
+    margin: 16px 0;
+    float: none;
+    font-size: 1.6em;
+    text-align: center; }
+    .price-table td, .price-table th {
+      padding: 4px;
+      border: solid 1px black; } }
 header {
   width: 100%;
   min-width: 1280px;
@@ -374,14 +388,6 @@ iframe {
       background-color: black;
       color: white; }
 
-table {
-  float: left;
-  font-size: 2em;
-  text-align: center; }
-  table td, table th {
-    padding: 8px 40px;
-    border: solid 1px black; }
-
 .section_title_a {
   margin: 75px auto 0;
   font-size: 24px;
@@ -507,16 +513,6 @@ table {
     .about_text_box {
       width: 100%;
       margin-bottom: 50px; }
-
-  table {
-    width: 100%;
-    margin: 16px 0;
-    float: none;
-    font-size: 1.6em;
-    text-align: center; }
-    table td, table th {
-      padding: 4px;
-      border: solid 1px black; }
 
   .select .title {
     font-size: 2em;

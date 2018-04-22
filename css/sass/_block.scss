@@ -20,3 +20,28 @@
     background-color: black;
     color: white;
 }
+
+.price-table {
+    font-size: 2em;
+    text-align: center;
+
+    td, th {
+        padding: 8px 40px;
+        border: solid 1px black;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .price-table {
+        width: 100%;
+        margin: 16px 0;
+        float: none;
+        font-size: 1.6em;
+        text-align: center;
+
+        td, th {
+            padding: 4px;
+            border: solid 1px black;
+        }
+    }
+}
